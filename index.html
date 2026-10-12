@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Nethra Shree SD | B.Tech Artificial Intelligence & Machine Learning | SRMIST Ramapuram</title>
+  <meta name="title" content="Nethra Shree SD | B.Tech Artificial Intelligence & Machine Learning | SRMIST Ramapuram">
+  <meta name="description" content="Official academic and professional portfolio of Nethra Shree SD, first-year B.Tech student in Artificial Intelligence and Machine Learning at SRM Institute of Science and Technology, Ramapuram Campus, Chennai (Batch 2026–2030).">
+  <meta name="keywords" content="Nethra Shree SD, SRMIST Ramapuram, B.Tech AI and ML, Artificial Intelligence, Machine Learning, DAV Girls Senior Secondary School Gopalapuram, Student Portfolio Chennai">
+  <meta name="author" content="Nethra Shree SD">
+  <meta name="theme-color" content="#060913">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nethra Shree SD | B.Tech Artificial Intelligence & Machine Learning">
+  <meta property="og:description" content="First-year B.Tech student specializing in AI & ML at SRM Institute of Science and Technology, Ramapuram Campus. Passionate about artificial intelligence, reading, communication, and public speaking.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f182e'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='bold' font-size='46' fill='%2338bdf8'>NS</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="#home" class="brand-link" aria-label="Nethra Shree SD Portfolio Home">
+        <div class="brand-logo-mark">NS</div>
+        <div class="brand-meta">
+          <span class="brand-name">Nethra Shree SD</span>
+          <span class="brand-badge">SRMIST · AI & ML</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Primary Site Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#beyond-academics" class="nav-link">Beyond Academics</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Connect</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- A. Home / Hero Section -->
+    <section class="hero-section" id="home" aria-label="Introduction and Overview">
+      <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-content">
+        <div class="hero-text-wrap">
+          <div class="hero-status-pill">
+            <span class="pulse-indicator"></span>
+            <span>First-Year Undergraduate · Batch 2026–2030</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Hello, I’m <span class="text-gradient">Nethra Shree SD</span>.
+          </h1>
+
+          <p class="hero-subtitle">
+            B.Tech Student | Artificial Intelligence & Machine Learning | Lifelong Learner
+          </p>
+
+          <p class="hero-intro">
+            I am a first-year B.Tech student specializing in Artificial Intelligence and Machine Learning at SRM Institute of Science and Technology, Ramapuram. With a strong interest in reading, communication, and public speaking, I am committed to developing my technical knowledge, expanding my perspective, and building the skills required to contribute meaningfully to the evolving world of technology.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#about" class="btn btn-primary" id="exploreProfileBtn">
+              <span>Explore My Profile</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="contactHeroBtn">
+              <span>Contact Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Frame Showcase with Monogram Fallback Toggle -->
+        <div class="hero-visual-card">
+          <div class="portrait-frame-outer">
+            <!-- Active Image Representation -->
+            <div class="portrait-frame-inner" id="profileImageWrap">
+              <img src="assets/images/profile-avatar.jpg" alt="Nethra Shree SD - B.Tech AI & ML Student Portrait" class="portrait-photo" id="profileImg">
+            </div>
+
+            <!-- Elegant Fallback Monogram State -->
+            <div class="portrait-frame-inner monogram-fallback hidden" id="profileMonogramWrap" aria-hidden="true">
+              <div class="monogram-orbital-ring"></div>
+              <div class="monogram-letters">NS</div>
+              <div class="monogram-caption">Nethra Shree SD</div>
+              <div class="monogram-sub">SRMIST Ramapuram · AI & ML</div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-chip chip-top-right">
+              <span class="chip-dot"></span>
+              <span>SRMIST Ramapuram</span>
+            </div>
+
+            <div class="floating-chip chip-bottom-left">
+              <span class="chip-dot"></span>
+              <span>AI & ML Cohort</span>
+            </div>
+          </div>
+
+          <!-- Interactive toggle satisfying: "Provide a designated space for a professional profile photograph, with an elegant fallback if no image is available" -->
+          <button type="button" class="profile-mode-toggle" id="toggleProfileMode" aria-label="Toggle profile portrait and academic monogram representation">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+            <span id="profileModeLabel">View Monogram Fallback</span>
+          </button>
+        </div>
+
+        <!-- Quick Facts Summary Bar -->
+        <div class="hero-quick-facts">
+          <div class="fact-item">
+            <div class="fact-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="fact-label">Academic Institution</div>
+              <div class="fact-value">SRMIST, Ramapuram Campus</div>
+            </div>
+          </div>
+
+          <div class="fact-item">
+            <div class="fact-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="fact-label">Degree Focus</div>
+              <div class="fact-value">B.Tech in AI & ML (2026–2030)</div>
+            </div>
+          </div>
+
+          <div class="fact-item">
+            <div class="fact-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="fact-label">School Heritage</div>
+              <div class="fact-value">DAV Girls SSS, Gopalapuram</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- B. About Me Section -->
+    <section class="section section-alt" id="about" aria-label="About Nethra Shree SD">
+      <div class="container">
+        <div class="section-header fade-up-init">
+          <span class="section-badge">Academic Identity</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            An authentic perspective on my engineering foundation, intellectual curiosity, and long-term commitment to responsible technological advancement.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Biography Narrative -->
+          <div class="about-bio-card fade-up-init">
+            <p>
+              I am currently at the beginning of my engineering journey at <strong>SRM Institute of Science and Technology, Ramapuram Campus</strong>. My academic concentration in Artificial Intelligence and Machine Learning stems from an early curiosity about how computational systems can learn, reason, and solve intricate real-world challenges.
+            </p>
+            <p>
+              As a first-year undergraduate, my current priority is building a resilient, uncompromised foundation across programming fundamentals, discrete mathematics, analytical reasoning, and algorithmic problem-solving. I approach every concept with methodological rigor and an eagerness to comprehend foundational mechanics before advancing to high-level applications.
+            </p>
+            <p>
+              Beyond the technical realm, I place immense value on communication, public speaking, and extensive reading. I believe that the most impactful engineers and researchers are those who can synthesize complex technical ideas into clear, empathetic, and persuasive dialogue. Rooted in disciplined habits cultivated during my schooling at <strong>DAV Girls Senior Secondary School, Gopalapuram</strong>, I strive for continuous personal development, academic integrity, and collaborative teamwork.
+            </p>
+
+            <div class="about-highlight-callout">
+              <div class="callout-title">Guiding Engineering Principle</div>
+              <p class="callout-text">
+                “Emerging technologies achieve their highest purpose when grounded in disciplined mathematical foundations, guided by ethical consideration, and articulated with clear human communication.”
+              </p>
+            </div>
+          </div>
+
+          <!-- Strategic Pillars -->
+          <div class="about-pillars-grid">
+            <div class="pillar-card fade-up-init delay-1">
+              <div class="pillar-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a9 9 0 0 1 9 9c0 3.1-1.5 5.8-3.9 7.4V20a2 2 0 0 1-2 2h-6.2a2 2 0 0 1-2-2v-1.6C4.5 16.8 3 14.1 3 11a9 9 0 0 1 9-9z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Foundational Rigor</h3>
+                <p class="pillar-desc">Mastering mathematical logic, algorithmic problem solving, and computational paradigms from fundamental first principles.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card fade-up-init delay-2">
+              <div class="pillar-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                  <line x1="12" y1="19" x2="12" y2="23"></line>
+                  <line x1="8" y1="23" x2="16" y2="23"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Articulate Communication</h3>
+                <p class="pillar-desc">Cultivating oratory confidence and structured expression, bridging technical depth with clarity and active engagement.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card fade-up-init delay-3">
+              <div class="pillar-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Intellectual Curiosity</h3>
+                <p class="pillar-desc">Sustained by regular reading across literature, scientific essays, and cognitive disciplines for broad perspective.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card fade-up-init delay-4">
+              <div class="pillar-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Collaborative Growth</h3>
+                <p class="pillar-desc">Valuing academic integrity, mutual support among peers, and active participation in technical student communities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- C. Education Section -->
+    <section class="section" id="education" aria-label="Academic Background">
+      <div class="container">
+        <div class="section-header fade-up-init">
+          <span class="section-badge">Academic Timeline</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">
+            A verified chronicle of my academic institutions, foundational learning, and structured degree path.
+          </p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- Undergraduate Institution -->
+          <div class="edu-card fade-up-init">
+            <div class="edu-marker">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="edu-content">
+              <div class="edu-header">
+                <div>
+                  <div class="edu-type-badge">Undergraduate Education · B.Tech</div>
+                  <h3 class="edu-institution">SRM Institute of Science and Technology, Ramapuram Campus</h3>
+                  <div class="edu-degree">Bachelor of Technology in Artificial Intelligence and Machine Learning (AI & ML)</div>
+                  <div class="edu-location">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Chennai, Tamil Nadu, India</span>
+                  </div>
+                </div>
+                <div class="edu-batch-pill">Batch: 2026–2030 (First Year)</div>
+              </div>
+
+              <p class="edu-desc">
+                Currently enrolled in the four-year undergraduate engineering programme focused on machine intelligence, mathematical foundations, computing architecture, and data-driven systems.
+              </p>
+
+              <div class="edu-milestones">
+                <div class="edu-milestone-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Academic Status: First Year · Actively engaged in foundational core curriculum</span>
+                </div>
+                <div class="edu-milestone-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Pre-engineering analytical coursework: Discrete Mathematics, Problem Solving & Programming</span>
+                </div>
+                <div class="edu-milestone-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Architecture designed to incorporate semester CGPA, lab milestones, and honors over 2026–2030</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Senior Secondary School -->
+          <div class="edu-card fade-up-init delay-1">
+            <div class="edu-marker">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div class="edu-content">
+              <div class="edu-header">
+                <div>
+                  <div class="edu-type-badge">School Education</div>
+                  <h3 class="edu-institution">DAV Girls Senior Secondary School</h3>
+                  <div class="edu-degree">Secondary & Higher Secondary Education</div>
+                  <div class="edu-location">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Gopalapuram, Chennai, Tamil Nadu, India</span>
+                  </div>
+                </div>
+                <div class="edu-batch-pill">Completed</div>
+              </div>
+
+              <p class="edu-desc">
+                Graduated from one of Chennai’s premier institutions renowned for scholastic excellence, rigorous mathematical foundations, cultural values, and disciplined character building.
+              </p>
+
+              <div class="edu-milestones">
+                <div class="edu-milestone-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Robust mathematical, analytical science, and language training</span>
+                </div>
+                <div class="edu-milestone-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Active involvement in literary events, public speaking, and elocution forums</span>
+                </div>
+                <div class="edu-milestone-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Enduring discipline, time-management habits, and intellectual curiosity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. Skills and Competencies Section -->
+    <section class="section section-alt" id="skills" aria-label="Skills and Competencies">
+      <div class="container">
+        <div class="section-header fade-up-init">
+          <span class="section-badge">Competencies & Strengths</span>
+          <h2 class="section-title">Skills & Competencies</h2>
+          <p class="section-subtitle">
+            Differentiated into verified interpersonal strengths and clearly marked, foundational technical modules ready for upcoming updates.
+          </p>
+        </div>
+
+        <!-- Category 1: Interpersonal and Professional Skills -->
+        <div class="skills-category-group fade-up-init">
+          <div class="skills-group-header">
+            <h3 class="skills-group-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-electric)" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <polyline points="16 11 18 13 22 9"></polyline>
+              </svg>
+              <span>Interpersonal & Professional Competencies</span>
+            </h3>
+            <span class="skills-notice-pill">Verified Strengths</span>
+          </div>
+
+          <div class="interpersonal-grid" id="interpersonalSkillsGrid">
+            <!-- Dynamically populated from PORTFOLIO_DATA -->
+          </div>
+        </div>
+
+        <!-- Category 2: Technical Skills (Placeholders as instructed) -->
+        <div class="skills-category-group fade-up-init">
+          <div class="skills-group-header">
+            <h3 class="skills-group-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-electric)" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Technical Skills & Learning Path</span>
+            </h3>
+            <span class="skills-notice-pill">First-Year Foundation · Expandable Placeholders</span>
+          </div>
+
+          <div class="technical-categories-grid" id="techSkillsCategories">
+            <!-- Dynamically populated from PORTFOLIO_DATA -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. Beyond Academics Section -->
+    <section class="section" id="beyond-academics" aria-label="Interests and Personal Development">
+      <div class="container">
+        <div class="section-header fade-up-init">
+          <span class="section-badge">Personal Development</span>
+          <h2 class="section-title">Beyond Academics</h2>
+          <p class="section-subtitle">
+            Cultivating holistic intellectual depth through reading, public speaking, structured communication, and technological awareness.
+          </p>
+        </div>
+
+        <div class="beyond-grid" id="beyondAcademicsGrid">
+          <!-- Dynamically populated from PORTFOLIO_DATA -->
+        </div>
+
+        <!-- Quote Banner -->
+        <div class="academic-quote-strip fade-up-init">
+          <div class="quote-content">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <div>
+              <p class="quote-text">
+                Reading expands the horizon of what is conceivable; disciplined communication transforms concepts into shared understanding.
+              </p>
+              <div class="quote-author">— Nethra Shree SD · Personal Academic Philosophy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F. Projects and Learning Portfolio -->
+    <section class="section section-alt" id="projects" aria-label="Projects and Learning Portfolio">
+      <div class="container">
+        <div class="section-header fade-up-init">
+          <span class="section-badge">Applied Engineering</span>
+          <h2 class="section-title">Projects & Learning Portfolio</h2>
+          <p class="section-subtitle">
+            A structured framework designed to scale across the four-year degree as practical applications and lab experiments progress.
+          </p>
+        </div>
+
+        <!-- Mandatory Professional Placeholder Banner -->
+        <div class="projects-placeholder-banner fade-up-init">
+          <div class="banner-sparkle" aria-hidden="true"></div>
+          <div class="banner-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>Undergraduate Foundation Notice</span>
+          </div>
+          <h3 class="banner-headline">Foundation in Progress</h3>
+          <p class="banner-text">
+            “I am currently building my technical foundation and exploring opportunities to apply my learning through practical projects. This section will showcase my future work, experiments, and academic projects.”
+          </p>
+          <button type="button" class="btn btn-secondary btn-sm" id="openBlueprintBtn" aria-haspopup="dialog">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="9" y1="21" x2="9" y2="9"></line>
+            </svg>
+            <span>View Standardized Project Card Architecture</span>
+          </button>
+        </div>
+
+        <!-- Reusable Project Card Template / Architecture Showcase -->
+        <div class="project-card-blueprint fade-up-init">
+          <div class="blueprint-header">
+            <div class="blueprint-title-wrap">
+              <h4>Reusable Project Card Template</h4>
+              <p>Standardized fields ready for semester mini-projects, hackathons, and AI research experiments</p>
+            </div>
+            <span class="tech-status-badge">Ready for Production Use</span>
+          </div>
+
+          <div class="blueprint-fields-grid">
+            <div class="blueprint-field-card">
+              <div class="field-name">01. Project Title</div>
+              <div class="field-desc">Clear, descriptive naming of the computational or AI solution.</div>
+            </div>
+            <div class="blueprint-field-card">
+              <div class="field-name">02. Project Overview</div>
+              <div class="field-desc">Concise executive summary of functionality and impact.</div>
+            </div>
+            <div class="blueprint-field-card">
+              <div class="field-name">03. Problem Statement</div>
+              <div class="field-desc">Real-world challenge, target constraint, or research question.</div>
+            </div>
+            <div class="blueprint-field-card">
+              <div class="field-name">04. Technologies Used</div>
+              <div class="field-desc">Verified tech stack badges (e.g. languages, frameworks, APIs).</div>
+            </div>
+            <div class="blueprint-field-card">
+              <div class="field-name">05. Key Learnings</div>
+              <div class="field-desc">Algorithmic, architectural, or debugging takeaways gained.</div>
+            </div>
+            <div class="blueprint-field-card">
+              <div class="field-name">06. Repository & Demo</div>
+              <div class="field-desc">Direct links to verified GitHub code and live deployment.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- G. Certifications and Achievements Section -->
+    <section class="section" id="certifications" aria-label="Certifications and Achievements">
+      <div class="container">
+        <div class="section-header fade-up-init">
+          <span class="section-badge">Verified Milestones</span>
+          <h2 class="section-title">Certifications & Achievements</h2>
+          <p class="section-subtitle">
+            An authentic repository reserved for verified credentials, academic honors, and co-curricular awards.
+          </p>
+        </div>
+
+        <div class="cert-placeholder-banner fade-up-init">
+          <div class="cert-banner-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <p>
+            This section will chronicle verified academic accomplishments, technical certifications, workshop participation, and co-curricular milestones as they are completed throughout my undergraduate tenure.
+          </p>
+        </div>
+
+        <div class="cert-categories-grid" id="certCategoriesGrid">
+          <!-- Dynamically populated from PORTFOLIO_DATA -->
+        </div>
+      </div>
+    </section>
+
+    <!-- H. Contact Section -->
+    <section class="section section-alt" id="contact" aria-label="Contact and Collaboration">
+      <div class="container">
+        <div class="section-header fade-up-init">
+          <span class="section-badge">Professional Engagement</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">
+            Open for academic discussions, peer collaboration, technical initiatives, and mentorship.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Invitation & Details -->
+          <div class="contact-info-card fade-up-init">
+            <p class="contact-invitation">
+              “I welcome opportunities to connect with fellow learners, participate in meaningful academic discussions, explore technology-focused initiatives, and collaborate on future projects.”
+            </p>
+
+            <div class="contact-channels">
+              <div class="contact-channel-item">
+                <div class="channel-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="channel-label">Professional Email</div>
+                  <div class="channel-value-wrap">
+                    <span class="channel-value">nethrashree.sd@example.com</span>
+                    <button type="button" class="copy-trigger" data-copy-text="nethrashree.sd@example.com" aria-label="Copy professional email address">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                      <span>Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="channel-label">LinkedIn Profile</div>
+                  <div class="channel-value-wrap">
+                    <span class="channel-value">linkedin.com/in/nethra-shree-sd</span>
+                    <span class="skill-tag">Placeholder</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="channel-label">GitHub Profile</div>
+                  <div class="channel-value-wrap">
+                    <span class="channel-value">github.com/nethrashree-placeholder</span>
+                    <span class="skill-tag">Placeholder</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="channel-label">Academic Campus</div>
+                  <div class="channel-value">SRM Institute of Science and Technology, Ramapuram, Chennai</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-privacy-note">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>Personal Privacy Protection: Residential details and private phone numbers are kept confidential.</span>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-wrap fade-up-init delay-1">
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="senderName" class="form-label">Full Name *</label>
+                <input type="text" id="senderName" class="form-input" placeholder="e.g. Dr. Ramesh Kumar / Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Email Address *</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="e.g. [email protected]" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject" class="form-label">Subject</label>
+                <input type="text" id="senderSubject" class="form-input" placeholder="Academic Discussion / Collaboration Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Message *</label>
+                <textarea id="senderMessage" class="form-textarea" placeholder="Please write your inquiry or thoughts here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-feedback hidden" id="formFeedback">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Thank you! Your message inquiry has been recorded and simulated.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- I. Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-identity">
+          <h3>Nethra Shree SD</h3>
+          <div class="footer-degree">B.Tech — Artificial Intelligence and Machine Learning</div>
+          <div class="footer-inst">SRM Institute of Science and Technology, Ramapuram Campus, Chennai</div>
+          <p class="footer-statement">
+            Committed to academic rigor, intellectual curiosity, disciplined continuous learning, and articulate communication as foundational pillars for future contributions in technology.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <ul class="footer-nav-list">
+            <li><a href="#home" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About</a></li>
+            <li><a href="#education" class="footer-nav-link">Education</a></li>
+            <li><a href="#skills" class="footer-nav-link">Skills</a></li>
+            <li><a href="#beyond-academics" class="footer-nav-link">Beyond Academics</a></li>
+            <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+          </ul>
+
+          <a href="#home" class="back-to-top" aria-label="Scroll back to top of page">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+            <span>Back to Top</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span class="current-year">2026</span> Nethra Shree SD. All rights reserved.
+        </div>
+        <div>
+          Batch 2026–2030 · Artificial Intelligence & Machine Learning
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Project Blueprint Architecture -->
+  <div class="modal-overlay" id="projectBlueprintModal" role="dialog" aria-modal="true" aria-labelledby="modalBlueprintTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card" tabindex="-1">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalBlueprintTitle" style="color: #ffffff; font-size: 1.25rem;">Standard Project Data Schema</h3>
+          <p style="font-size: 0.85rem; color: #94a3b8;">How Nethra can add future projects to js/data.js</p>
+        </div>
+        <button type="button" class="modal-close-icon close-modal-btn" aria-label="Close dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.6;">
+        When ready to publish a semester practical, AI model experiment, or hackathon project, simply add an entry to the <code>PORTFOLIO_DATA.projects.upcomingProjects</code> array in <code>js/data.js</code>:
+      </p>
+
+      <pre class="modal-json-preview"><code>{
+  "title": "Machine Learning Model for Predictive Analytics",
+  "overview": "A predictive model analyzing structured datasets.",
+  "problemStatement": "Addressing accuracy degradation in noisy data.",
+  "technologies": ["Python", "NumPy", "Scikit-Learn"],
+  "keyLearnings": "Feature engineering and cross-validation techniques.",
+  "githubUrl": "https://github.com/nethrashree/project-repo",
+  "demoUrl": "https://project-demo.vercel.app"
+}</code></pre>
+
+      <div style="margin-top: 24px; display: flex; justify-content: flex-end;">
+        <button type="button" class="btn btn-secondary btn-sm close-modal-btn">Close Schema</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/canvas-bg.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
